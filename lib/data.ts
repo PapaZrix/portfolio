@@ -7,7 +7,6 @@ import html from '@/public/icons/html.svg';
 import javascript from '@/public/icons/javascript.svg';
 import next from '@/public/icons/next.svg';
 import prisma from '@/public/icons/prisma.svg';
-import python from '@/public/icons/python.svg';
 import react from '@/public/icons/react.svg';
 import sql from '@/public/icons/sql.svg';
 import tailwind from '@/public/icons/tailwind.svg';
@@ -57,6 +56,5 @@ export const skills = [
   { name: 'Typescript', icon: typescript },
   { name: 'Prisma', icon: prisma },
   { name: 'SQL', icon: sql },
-  { name: 'Python', icon: python },
   { name: 'Git', icon: git },
 ] as const;

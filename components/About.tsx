@@ -1,9 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import SectionHeading from './SectionHeading';
+import { useSectionInView } from '@/hooks/useSectionView';
 
 export default function About() {
+  const { ref } = useSectionInView('About');
+
   return (
     <section
+      ref={ref}
       id='about'
       className='p-4 sm:p-0 text-slate-800 dark:text-slate-300 mb-36 scroll-mt-24'
     >
