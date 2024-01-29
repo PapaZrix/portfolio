@@ -1,5 +1,5 @@
 import blog from '@/public/images/blog.png';
-import crypto from '@/public/images/blog.png';
+import crypto from '@/public/images/crypto.png';
 import wordle from '@/public/images/wordle.png';
 import css from '@/public/icons/css.svg';
 import git from '@/public/icons/git.svg';
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: 'Press To Interact',
     description:
-      'Full stack blog website built in Next.js 12 (pages router) for a friend. Includes server side rendered post pages, SEO, role based authentication (user/admin), admin protected routes (post editor and dashboard), user profile activity and account settings, Planetscale hosted database built in Prisma, comment and like features.',
+      'Full stack blog website built in Next.js 12 (pages router) for a friend. SSR, SEO, admin dashboard and post editor, user profile, database built with Prisma, auth (role based) included.',
     imageUrl: blog,
     codeUrl: 'https://github.com/PapaZrix/blog',
     liveUrl: 'https://presstointeract.com/',
@@ -32,7 +32,7 @@ export const projects = [
   {
     title: 'Crypto Tracker',
     description:
-      'My first Next.js 13/14 app (app router) in Typescript. Cryptocurrency website for checking a coins current market value, market movement and historic price movement, including graph visualization. Includes light/dark mode feature. **NOTE uses Coingecko API which has a per minute request restriction, might lead to errors.',
+      'Next.js 13/14 (app router) app in Typescript. Check a coins current price and market movement. **NOTE Coingecko API has a per minute request restriction, might lead to errors.',
     imageUrl: crypto,
     codeUrl: 'https://github.com/PapaZrix/crypto-tracker',
     liveUrl: 'https://crypto-tracker-sepia-chi.vercel.app/',
@@ -40,7 +40,7 @@ export const projects = [
   {
     title: 'Wordle Clone',
     description:
-      'One of my first React.js projects. Simplified Wordle clone with keyboard and mouse usage support as well as light/dark mode toggle.',
+      'One of my first React.js projects. Simplified Wordle clone with keyboard and mouse support as well as light/dark mode toggle.',
     imageUrl: wordle,
     codeUrl: 'https://github.com/PapaZrix/wordle-clone',
     liveUrl: 'https://papazrix.github.io/wordle-clone/',
