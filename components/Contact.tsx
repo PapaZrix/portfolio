@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SectionHeading from './SectionHeading';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/hooks/useSectionView';
@@ -29,6 +29,14 @@ const Button = () => {
 export default function Contact() {
   const { ref } = useSectionInView('Contact');
   const formRef = useRef<HTMLFormElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window !== undefined) {
+      if (window.innerWidth < 640) setIsMobile(true);
+      setIsMobile(false);
+    }
+  }, []);
 
   return (
     <motion.section
@@ -37,13 +45,13 @@ export default function Contact() {
       className='p-4 sm:p-0 scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
-        x: window !== undefined && window.innerWidth < 640 ? 0 : 100,
-        y: window !== undefined && window.innerWidth < 640 ? 150 : 0,
+        x: isMobile ? 0 : 100,
+        y: isMobile ? 150 : 0,
       }}
       whileInView={{
         opacity: 1,
         x: 0,
-        y: window.innerWidth < 640 ? 0 : 0,
+        y: isMobile ? 0 : 0,
       }}
       transition={{
         duration: 1,
