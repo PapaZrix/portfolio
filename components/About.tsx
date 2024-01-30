@@ -15,7 +15,7 @@ export default function About() {
       initial={{ opacity: 0, y: -200 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: 'tween', duration: 0.3 }}
-      className='p-4 sm:p-0 text-slate-800 dark:text-slate-300 mb-10 sm:mb-36 scroll-mt-24'
+      className='p-4 lg:p-0 text-slate-800 dark:text-slate-300 mb-10 sm:mb-36 scroll-mt-24'
     >
       <SectionHeading>About Me</SectionHeading>
       <p className='mb-4'>

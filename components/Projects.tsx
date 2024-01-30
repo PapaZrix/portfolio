@@ -17,7 +17,7 @@ export default function Projects() {
       transition={{ delay: 0.2 }}
       ref={ref}
       id='projects'
-      className='scroll-mt-28 mb-10 sm:mb-28 p-4 sm:p-0'
+      className='scroll-mt-28 mb-10 sm:mb-28 p-4 lg:p-0'
     >
       <SectionHeading>My Projects</SectionHeading>
       <div>

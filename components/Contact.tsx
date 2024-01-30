@@ -34,7 +34,7 @@ export default function Contact() {
     <motion.section
       id='contact'
       ref={ref}
-      className='p-4 sm:p-0 scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+      className='p-4 lg:p-0 scroll-mt-32 mb-20 sm:mb-28 md:w-full w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
         y: 150,

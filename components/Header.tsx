@@ -17,7 +17,7 @@ export default function Header() {
       initial={{ opacity: 0, scale: 0, x: -200 }}
       animate={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ type: 'tween', duration: 0.3 }}
-      className='p-4 sm:p-0 w-full lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-20'
+      className='p-4 lg:p-0 w-full lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-20'
     >
       <div>
         <div className='flex items-center gap-3 sm:gap-6'>
