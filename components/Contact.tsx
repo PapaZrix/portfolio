@@ -37,13 +37,11 @@ export default function Contact() {
       className='p-4 sm:p-0 scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
-        x: typeof window !== undefined && window.innerWidth < 640 ? 0 : 100,
-        y: typeof window !== undefined && window.innerWidth < 640 ? 150 : 0,
+        y: 150,
       }}
       whileInView={{
         opacity: 1,
-        x: 0,
-        y: typeof window !== undefined && window.innerWidth < 640 ? 0 : 0,
+        y: 0,
       }}
       transition={{
         duration: 1,
