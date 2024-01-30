@@ -61,7 +61,7 @@ export default function Header() {
           ))}
         </ul>
       </div>
-      <div className='mt-6 sm:mt-0 flex justify-between sm:flex-row items-center sm:justify-start gap-4 font-medium'>
+      <div className='mt-6 lg:mt-6 xl:mt-0 flex justify-between sm:flex-row items-center sm:justify-start gap-4 font-medium'>
         <Link
           href='#contact'
           className='w-1/3 text-sm sm:w-auto sm:text-base group bg-gray-950 dark:bg-gray-800 text-white px-3 py-2 whitespace-nowrap sm:px-7 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'

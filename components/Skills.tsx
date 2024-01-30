@@ -29,7 +29,7 @@ export default function Skills() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.2 }}
       id='skills'
-      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
+      className='mb-28 max-w-[53rem] scroll-mt-60 text-center sm:mb-40'
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className='grid grid-cols-5 justify-items-center gap-2 text-lg text-gray-800'>
