@@ -14,7 +14,7 @@ const Button = () => {
   return (
     <button
       type='submit'
-      className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65'
+      className='w-full mx-auto group flex items-center justify-center gap-2 h-[3rem] sm:w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65'
       disabled={pending}
     >
       {pending ? (
@@ -34,14 +34,16 @@ export default function Contact() {
     <motion.section
       id='contact'
       ref={ref}
-      className='scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+      className='p-4 sm:p-0 scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
-        x: 125,
+        x: window.innerWidth < 640 ? 0 : 100,
+        y: window.innerWidth < 640 ? 150 : 0,
       }}
       whileInView={{
         opacity: 1,
         x: 0,
+        y: window.innerWidth < 640 ? 0 : 0,
       }}
       transition={{
         duration: 1,
@@ -52,9 +54,9 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className='text-start text-gray-700 -mt-6 dark:text-white/80'>
+      <p className='text-start text-gray-700 mt-0 sm:-mt-6 dark:text-white/80'>
         Please contact me directly at{' '}
-        <a className='underline' href='mailto:example@gmail.com'>
+        <a className='underline underline-offset-[5px]' href='mailto:example@gmail.com'>
           zrilic313@gmail.com
         </a>{' '}
         or through this form.
