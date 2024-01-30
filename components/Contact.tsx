@@ -34,12 +34,14 @@ export default function Contact() {
     <motion.section
       id='contact'
       ref={ref}
-      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+      className='scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
+        x: 125,
       }}
       whileInView={{
         opacity: 1,
+        x: 0,
       }}
       transition={{
         duration: 1,

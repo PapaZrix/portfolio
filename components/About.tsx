@@ -3,14 +3,18 @@
 import Link from 'next/link';
 import SectionHeading from './SectionHeading';
 import { useSectionInView } from '@/hooks/useSectionView';
+import { motion } from 'framer-motion';
 
 export default function About() {
   const { ref } = useSectionInView('About');
 
   return (
-    <section
+    <motion.section
       ref={ref}
       id='about'
+      initial={{ opacity: 0, y: -200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: 'tween', duration: 0.3 }}
       className='p-4 sm:p-0 text-slate-800 dark:text-slate-300 mb-36 scroll-mt-24'
     >
       <SectionHeading>About Me</SectionHeading>
@@ -69,6 +73,6 @@ export default function About() {
         <span className='font-semibold dark:text-slate-200'>Football Manager</span> and when I
         finally get off the computer I spend that time with my significant other and friends.
       </p>
-    </section>
+    </motion.section>
   );
 }

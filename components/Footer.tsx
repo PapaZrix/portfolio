@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='text-xs mt-6 mb-10 px-4 text-center'>
+    <footer className='text-xs my-6 px-4 text-center text-slate-800 dark:text-slate-300'>
       <p className='mb-2'>
         Hosted on{' '}
         <a

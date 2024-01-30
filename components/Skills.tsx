@@ -21,10 +21,16 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView('Skills');
+  const { ref } = useSectionInView('Skills', 1);
 
   return (
-    <section id='skills' className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
+    <motion.section
+      initial={{ opacity: 0, x: 125 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.2 }}
+      id='skills'
+      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
+    >
       <SectionHeading>My skills</SectionHeading>
       <ul className='grid grid-cols-5 justify-items-center gap-2 text-lg text-gray-800'>
         {skills.map((skill, index) => (
@@ -49,6 +55,6 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 }
