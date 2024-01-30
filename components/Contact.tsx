@@ -37,8 +37,8 @@ export default function Contact() {
       className='p-4 sm:p-0 scroll-mt-32 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
-        x: window.innerWidth < 640 ? 0 : 100,
-        y: window.innerWidth < 640 ? 150 : 0,
+        x: window !== undefined && window.innerWidth < 640 ? 0 : 100,
+        y: window !== undefined && window.innerWidth < 640 ? 150 : 0,
       }}
       whileInView={{
         opacity: 1,
