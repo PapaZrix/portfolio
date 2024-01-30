@@ -42,7 +42,7 @@ export default function Skills() {
           >
             <div>
               <Image src={skill.icon} alt={skill.icon} width={40} height={40} />
-              <span className='absolute -top-6 scale-0 rounded bg-slate-200 p-2 text-xs group-hover:scale-100'>
+              <span className='absolute -top-6 scale-0 rounded bg-slate-200 dark:bg-slate-800 p-2 text-xs group-hover:scale-100'>
                 {skill.name}
               </span>
             </div>
