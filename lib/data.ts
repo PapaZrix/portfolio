@@ -25,7 +25,7 @@ export const projects = [
     description:
       'Full stack blog website built in Next.js 12 (pages router) for a friend. SSR, SEO, admin dashboard and post editor, user profile, database built with Prisma, auth (role based) included.',
     imageUrl: blog,
-    codeUrl: 'https://github.com/PapaZrix/blog',
+    codeUrl: 'https://github.com/PapaZrix/blog-public',
     liveUrl: 'https://presstointeract.com/',
   },
   {
