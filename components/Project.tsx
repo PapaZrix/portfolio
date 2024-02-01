@@ -36,6 +36,7 @@ export default function Project({ title, description, imageUrl, codeUrl, liveUrl
             <Link
               href={codeUrl}
               className='flex gap-2 items-center border p-2 bg-slate-300 rounded-md hover:bg-slate-400 hover:scale-105 duration-100 dark:bg-slate-800 hover:dark:bg-slate-900'
+              target='_blank'
             >
               <FaGithub />
               Code
@@ -43,6 +44,7 @@ export default function Project({ title, description, imageUrl, codeUrl, liveUrl
             <Link
               href={liveUrl}
               className='flex gap-2 items-center border px-3 py-2 bg-slate-300 rounded-md hover:bg-slate-400 hover:scale-105 duration-100 dark:bg-slate-800 hover:dark:bg-slate-900'
+              target='_blank'
             >
               <LuMonitorPlay />
               Live
