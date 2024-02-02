@@ -24,8 +24,8 @@ export default function About() {
           Faculty of Economics and Business Zagreb
         </span>
         , a little less than 2 years ago I decided to begin learning about programming, more
-        specifically <span className='font-semibold dark:text-slate-200'>Web development</span>.
-        Ever since then I&apos;ve slowly manoeuvred through the large and ever expanding landspace
+        specifically <span className='font-semibold dark:text-slate-200'>web development</span>.
+        Ever since then I&apos;ve slowly manoeuvred through the large and ever expanding landscape
         that is the web, and thanks to{' '}
         <Link
           href='https://www.theodinproject.com/'

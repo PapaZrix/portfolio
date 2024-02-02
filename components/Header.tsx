@@ -20,7 +20,7 @@ export default function Header() {
       className='p-4 lg:p-0 w-full lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-20'
     >
       <div>
-        <div className='flex items-center gap-3 sm:gap-6'>
+        <div className='flex items-center gap-5 sm:gap-6'>
           <h1 className='text-4xl sm:text-5xl text-gray-800 dark:text-slate-200 font-bold'>
             Dominik Zrilić
           </h1>
