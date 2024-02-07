@@ -8,16 +8,20 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const pathname = usePathname();
 
   return (
     <motion.header
       initial={{ opacity: 0, scale: 0, x: -200 }}
       animate={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ type: 'tween', duration: 0.3 }}
-      className='p-4 lg:p-0 w-full lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-20'
+      className={`p-4 lg:p-0 w-full lg:sticky lg:top-0 lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-20 ${
+        pathname !== '/' ? 'hidden' : 'lg:flex'
+      }`}
     >
       <div>
         <div className='flex items-center gap-5 sm:gap-6'>
